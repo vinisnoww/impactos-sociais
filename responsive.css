@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Impacto Social — responsive.css
+   Abordagem mobile-first. Breakpoints:
+     ≥ 640px  — tablets pequenos (2 colunas)
+     ≥ 900px  — tablets/desktop (menu horizontal, 3 colunas)
+     ≥ 1200px — telas largas
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  h1 { font-size: 2.4rem; }
+  .hero h1 { font-size: 2.8rem; }
+  .grade--2, .grade--3, .grade--4 { grid-template-columns: repeat(2, 1fr); }
+  .filtros { grid-template-columns: 2fr 1fr; }
+  .campos-linha { display: grid; grid-template-columns: 1fr 1fr; gap: var(--esp-3); }
+}
+
+@media (min-width: 900px) {
+  .menu-toggle { display: none; }
+  .menu, .menu.aberto {
+    display: flex; position: static; border: 0; padding: 0; gap: var(--esp-1); background: transparent;
+  }
+  .menu a { padding: var(--esp-2) var(--esp-3); }
+  .grade--3 { grid-template-columns: repeat(3, 1fr); }
+  .grade--4 { grid-template-columns: repeat(4, 1fr); }
+  .campos-linha--3 { grid-template-columns: 2fr 1fr 1fr; }
+  .secao { padding: var(--esp-6) 0; }
+}
+
+@media (min-width: 1200px) {
+  .container { padding: 0 var(--esp-4); }
+}
+
+@media print {
+  .cabecalho, .rodape, .cta-doacao, .menu-toggle { display: none; }
+  body { color: #000; }
+}

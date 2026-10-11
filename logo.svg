@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="48" viewBox="0 0 200 48" role="img" aria-labelledby="t">
+  <title id="t">Impacto Social</title>
+  <circle cx="24" cy="24" r="20" fill="#0b2a4a"/>
+  <path d="M24 35s-9-5.6-9-12.2c0-3.3 2.5-5.8 5.5-5.8 1.4 0 2.8.7 3.5 1.9.7-1.2 2.1-1.9 3.5-1.9 3 0 5.5 2.5 5.5 5.8C33 29.4 24 35 24 35z" fill="#2fa36b"/>
+  <text x="52" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#0b2a4a">Impacto <tspan fill="#1f8a58">Social</tspan></text>
+</svg>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos sociais — Impacto Social</title>
+  <meta name="description" content="Catálogo de projetos sociais da Impacto Social com filtro por categoria e pesquisa. Dados demonstrativos.">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra" style="position:relative">
+      <a class="cabecalho__logo" href="index.html" aria-label="Impacto Social — página inicial">
+        <img src="assets/images/logo.svg" alt="Impacto Social" width="200" height="48">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="secao" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <h1 id="titulo-projetos">Projetos sociais</h1>
+        <p class="secao__intro">Conheça as frentes de atuação da Impacto Social e escolha onde participar.</p>
+        <p class="aviso"><strong>Dados demonstrativos:</strong> os projetos, locais e percentuais abaixo são fictícios.</p>
+
+        <form class="filtros" role="search" aria-label="Filtrar projetos" onsubmit="return false">
+          <div class="campo">
+            <label for="busca">Pesquisar projeto</label>
+            <input type="search" id="busca" name="busca" placeholder="Ex.: horta, aulas, alimentos">
+          </div>
+          <div class="campo">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+              <option value="todas">Todas</option>
+              <option value="educacao">Educação</option>
+              <option value="saude">Saúde</option>
+              <option value="meio-ambiente">Meio ambiente</option>
+              <option value="assistencia-social">Assistência social</option>
+            </select>
+          </div>
+        </form>
+        <p id="status-filtro" class="meta" role="status" aria-live="polite"></p>
+
+        <div class="grade grade--2" id="lista-projetos">
+          <article class="card" id="educacao" data-categoria="educacao">
+            <img class="card__img" src="assets/images/projeto-educacao.webp" alt="Ilustração abstrata em azul e dourado (projeto de educação)" width="800" height="500">
+            <div class="card__corpo">
+              <span class="etiqueta">Educação</span>
+              <h3>Reforço Escolar Comunitário</h3>
+              <p class="meta">Local: Bairro Exemplo, Cidade Exemplo</p>
+              <p>Aulas de apoio em português e matemática duas vezes por semana, com voluntários e professores parceiros.</p>
+              <div class="progresso">
+                <div class="progresso__rotulo"><span>Progresso da meta de voluntários (demonstrativo)</span><span>65%</span></div>
+                <div class="progresso__trilho" role="progressbar" aria-label="Progresso do projeto Reforço Escolar Comunitário" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><div class="progresso__barra" data-valor="65"></div></div>
+              </div>
+              <details class="detalhes">
+                <summary>Detalhes do projeto</summary>
+                <p><strong>Objetivo:</strong> Reduzir a defasagem de aprendizagem de crianças do ensino fundamental.</p>
+                <p><strong>Localização:</strong> Bairro Exemplo, Cidade Exemplo.</p>
+                <p class="meta">Informações fictícias, apenas para demonstração.</p>
+              </details>
+              <div class="btn-grupo">
+                <a class="btn btn--primario" href="cadastro.html">Quero ser voluntário</a>
+                <a class="btn btn--secundario" href="cadastro.html">Apoiar este projeto</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" id="meio-ambiente" data-categoria="meio-ambiente">
+            <img class="card__img" src="assets/images/projeto-meio-ambiente.webp" alt="Ilustração abstrata em verde (projeto de meio ambiente)" width="800" height="500" loading="lazy">
+            <div class="card__corpo">
+              <span class="etiqueta">Meio ambiente</span>
+              <h3>Hortas e Reflorestamento Urbano</h3>
+              <p class="meta">Local: Zona Leste, Cidade Exemplo</p>
+              <p>Mutirões mensais de plantio de mudas nativas e oficinas de cultivo orgânico.</p>
+              <div class="progresso">
+                <div class="progresso__rotulo"><span>Progresso da meta de mudas plantadas (demonstrativo)</span><span>40%</span></div>
+                <div class="progresso__trilho" role="progressbar" aria-label="Progresso do projeto Hortas e Reflorestamento Urbano" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40"><div class="progresso__barra" data-valor="40"></div></div>
+              </div>
+              <details class="detalhes">
+                <summary>Detalhes do projeto</summary>
+                <p><strong>Objetivo:</strong> Recuperar áreas degradadas e criar hortas coletivas.</p>
+                <p><strong>Localização:</strong> Zona Leste, Cidade Exemplo.</p>
+                <p class="meta">Informações fictícias, apenas para demonstração.</p>
+              </details>
+              <div class="btn-grupo">
+                <a class="btn btn--primario" href="cadastro.html">Quero ser voluntário</a>
+                <a class="btn btn--secundario" href="cadastro.html">Apoiar este projeto</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" id="saude" data-categoria="saude">
+            <img class="card__img" src="assets/images/projeto-saude.webp" alt="Ilustração abstrata em tons de vinho e rosa (projeto de saúde)" width="800" height="500" loading="lazy">
+            <div class="card__corpo">
+              <span class="etiqueta">Saúde</span>
+              <h3>Saúde Perto de Você</h3>
+              <p class="meta">Local: Vila Modelo, Cidade Exemplo</p>
+              <p>Rodas de conversa, campanhas de vacinação em parceria com a rede pública e orientação sobre alimentação saudável.</p>
+              <div class="progresso">
+                <div class="progresso__rotulo"><span>Progresso da meta de pessoas orientadas (demonstrativo)</span><span>55%</span></div>
+                <div class="progresso__trilho" role="progressbar" aria-label="Progresso do projeto Saúde Perto de Você" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55"><div class="progresso__barra" data-valor="55"></div></div>
+              </div>
+              <details class="detalhes">
+                <summary>Detalhes do projeto</summary>
+                <p><strong>Objetivo:</strong> Ampliar o acesso a orientações de prevenção e cuidados básicos.</p>
+                <p><strong>Localização:</strong> Vila Modelo, Cidade Exemplo.</p>
+                <p class="meta">Informações fictícias, apenas para demonstração.</p>
+              </details>
+              <div class="btn-grupo">
+                <a class="btn btn--primario" href="cadastro.html">Quero ser voluntário</a>
+                <a class="btn btn--secundario" href="cadastro.html">Apoiar este projeto</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" id="assistencia-social" data-categoria="assistencia-social">
+            <img class="card__img" src="assets/images/projeto-assistencia.webp" alt="Ilustração abstrata em tons de roxo e azul (projeto de assistência social)" width="800" height="500" loading="lazy">
+            <div class="card__corpo">
+              <span class="etiqueta">Assistência social</span>
+              <h3>Cesta Solidária</h3>
+              <p class="meta">Local: Região Central, Cidade Exemplo</p>
+              <p>Arrecadação e distribuição mensal de alimentos, com cadastro e acompanhamento das famílias.</p>
+              <div class="progresso">
+                <div class="progresso__rotulo"><span>Progresso da meta de cestas distribuídas (demonstrativo)</span><span>80%</span></div>
+                <div class="progresso__trilho" role="progressbar" aria-label="Progresso do projeto Cesta Solidária" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><div class="progresso__barra" data-valor="80"></div></div>
+              </div>
+              <details class="detalhes">
+                <summary>Detalhes do projeto</summary>
+                <p><strong>Objetivo:</strong> Garantir segurança alimentar a famílias em vulnerabilidade.</p>
+                <p><strong>Localização:</strong> Região Central, Cidade Exemplo.</p>
+                <p class="meta">Informações fictícias, apenas para demonstração.</p>
+              </details>
+              <div class="btn-grupo">
+                <a class="btn btn--primario" href="cadastro.html">Quero ser voluntário</a>
+                <a class="btn btn--secundario" href="cadastro.html">Apoiar este projeto</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="estado-vazio" id="estado-vazio" hidden>
+          <p><strong>Nenhum projeto encontrado.</strong></p>
+          <p>Tente outro termo ou limpe os filtros.</p>
+          <button type="button" class="btn btn--secundario" id="limpar-filtros">Limpar filtros</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="grade grade--3">
+        <div>
+          <h2>Impacto Social</h2>
+          <p>Projeto acadêmico demonstrativo. Não representa uma organização real.</p>
+        </div>
+        <nav aria-label="Rodapé">
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contato</h2>
+          <p><a href="index.html#contato">Dados de contato (exemplo)</a></p>
+        </div>
+      </div>
+      <p class="rodape__fim">© 2026 Impacto Social — projeto acadêmico.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impacto Social — Conectando pessoas a causas que transformam</title>
+  <meta name="description" content="Impacto Social: plataforma para ONGs divulgarem projetos, recrutarem voluntários e prestarem contas. Versão demonstrativa.">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra" style="position:relative">
+      <a class="cabecalho__logo" href="index.html" aria-label="Impacto Social — página inicial">
+        <img src="assets/images/logo.svg" alt="Impacto Social" width="200" height="48">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container">
+        <h1 id="titulo-hero">Conectando pessoas a causas que transformam comunidades</h1>
+        <p>A Impacto Social reúne projetos de educação, saúde, meio ambiente e assistência social, e abre espaço para quem quer ajudar como voluntário, doador ou apoiador.</p>
+        <div class="btn-grupo">
+          <a class="btn btn--primario" href="cadastro.html">Quero participar</a>
+          <a class="btn btn--claro" href="projetos.html">Conhecer projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top:var(--esp-4)">
+      <p class="aviso"><strong>Versão demonstrativa.</strong> Nomes, números, depoimentos, notícias, e-mail e telefone desta página são fictícios e servem apenas para a atividade acadêmica. Nenhuma doação ou cadastro real é processado.</p>
+    </div>
+
+    <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <h2 id="titulo-sobre">Quem somos</h2>
+        <p class="secao__intro">A Impacto Social é uma organização fictícia criada para demonstrar como uma ONG pode apresentar sua missão, divulgar projetos e abrir canais de participação de forma clara e transparente.</p>
+        <div class="grade grade--3">
+          <article class="card"><div class="card__corpo"><h3>Missão</h3><p>Promover inclusão e desenvolvimento local por meio de projetos sociais construídos com as comunidades.</p></div></article>
+          <article class="card"><div class="card__corpo"><h3>Visão</h3><p>Ser referência em transparência e participação cidadã no terceiro setor.</p></div></article>
+          <article class="card"><div class="card__corpo"><h3>Valores</h3><p>Transparência, respeito, cooperação, responsabilidade socioambiental e acolhimento.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" aria-labelledby="titulo-impacto">
+      <div class="container">
+        <h2 id="titulo-impacto">Nosso impacto <small style="font-size:.6em;color:var(--cor-texto-suave)">(números fictícios)</small></h2>
+        <div class="grade grade--4">
+          <div class="indicador"><strong>12</strong>projetos ativos</div>
+          <div class="indicador"><strong>3.400</strong>pessoas atendidas</div>
+          <div class="indicador"><strong>180</strong>voluntários</div>
+          <div class="indicador"><strong>8</strong>cidades alcançadas</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-destaque">
+      <div class="container">
+        <h2 id="titulo-destaque">Projetos em destaque</h2>
+        <div class="grade grade--2">
+          <article class="card">
+            <img class="card__img" src="assets/images/projeto-educacao.webp" alt="Ilustração abstrata em tons de azul e dourado representando o projeto de educação" width="800" height="500">
+            <div class="card__corpo">
+              <span class="etiqueta">Educação</span>
+              <h3>Reforço Escolar Comunitário</h3>
+              <p>Aulas de apoio para crianças do ensino fundamental, em parceria com escolas públicas.</p>
+              <div class="progresso">
+                <div class="progresso__rotulo"><span>Meta de voluntários (demonstrativo)</span><span>65%</span></div>
+                <div class="progresso__trilho" role="progressbar" aria-label="Meta de voluntários do Reforço Escolar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><div class="progresso__barra" data-valor="65"></div></div>
+              </div>
+              <div class="btn-grupo"><a class="btn btn--secundario" href="projetos.html#educacao">Ver detalhes</a></div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="assets/images/projeto-meio-ambiente.webp" alt="Ilustração abstrata em tons de verde representando o projeto de meio ambiente" width="800" height="500" loading="lazy">
+            <div class="card__corpo">
+              <span class="etiqueta">Meio ambiente</span>
+              <h3>Hortas e Reflorestamento Urbano</h3>
+              <p>Plantio de mudas e hortas coletivas para recuperar áreas degradadas nos bairros.</p>
+              <div class="progresso">
+                <div class="progresso__rotulo"><span>Meta de mudas (demonstrativo)</span><span>40%</span></div>
+                <div class="progresso__trilho" role="progressbar" aria-label="Meta de mudas do projeto de reflorestamento" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40"><div class="progresso__barra" data-valor="40"></div></div>
+              </div>
+              <div class="btn-grupo"><a class="btn btn--secundario" href="projetos.html#meio-ambiente">Ver detalhes</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="centro" style="margin-top:var(--esp-4)"><a class="btn btn--primario" href="projetos.html">Ver todos os projetos</a></p>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" aria-labelledby="titulo-voluntariado">
+      <div class="container">
+        <h2 id="titulo-voluntariado">Seja voluntário</h2>
+        <p class="secao__intro">Há oportunidades para diferentes perfis e disponibilidades: apoio pedagógico, ações ambientais, organização de eventos e comunicação. Faça seu cadastro e escolha "Voluntário" como tipo de usuário.</p>
+        <a class="btn btn--primario" href="cadastro.html">Cadastrar-me como voluntário</a>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-depoimentos">
+      <div class="container">
+        <h2 id="titulo-depoimentos">Depoimentos <small style="font-size:.6em;color:var(--cor-texto-suave)">(conteúdo fictício)</small></h2>
+        <div class="grade grade--2">
+          <blockquote class="card"><div class="card__corpo"><p>“Participar das aulas de reforço mudou a rotina da minha família.”</p><footer class="meta">Depoimento fictício — responsável de aluno</footer></div></blockquote>
+          <blockquote class="card"><div class="card__corpo"><p>“Como voluntária, encontrei um jeito simples de contribuir com meu tempo livre.”</p><footer class="meta">Depoimento fictício — voluntária</footer></div></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--alt" aria-labelledby="titulo-noticias">
+      <div class="container">
+        <h2 id="titulo-noticias">Notícias recentes <small style="font-size:.6em;color:var(--cor-texto-suave)">(fictícias)</small></h2>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li class="meta"><strong>Exemplo:</strong> Mutirão de plantio reúne voluntários no fim de semana.</li>
+          <li class="meta"><strong>Exemplo:</strong> Novas turmas de reforço escolar abrem inscrições.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-doacao" aria-labelledby="titulo-doacao">
+      <div class="container">
+        <h2 id="titulo-doacao">Apoie quem faz a diferença</h2>
+        <p>O recebimento de doações online ainda não está implementado nesta versão. Cadastre-se como doador ou apoiador para registrar seu interesse.</p>
+        <a class="btn btn--claro" href="cadastro.html">Cadastrar como doador</a>
+      </div>
+    </section>
+
+    <section class="secao" id="contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <h2 id="titulo-contato">Contato</h2>
+        <p class="aviso"><strong>Dados de exemplo:</strong> endereço, e-mail e telefone abaixo são fictícios.</p>
+        <address style="font-style:normal">
+          Rua Exemplo, 123 — Centro, Cidade Exemplo/UF<br>
+          E-mail: <a href="mailto:contato@exemplo.org">contato@exemplo.org</a><br>
+          Telefone: (00) 0000-0000
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="grade grade--3">
+        <div>
+          <h2>Impacto Social</h2>
+          <p>Projeto acadêmico demonstrativo. Não representa uma organização real.</p>
+        </div>
+        <nav aria-label="Rodapé">
+          <h2>Navegação</h2>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Redes sociais</h2>
+          <p>Perfis ainda não criados (exemplo).</p>
+        </div>
+      </div>
+      <p class="rodape__fim">© 2026 Impacto Social — projeto acadêmico.</p>
+    </div>
+  </footer>
+</body>
+</html>
